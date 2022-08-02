@@ -1,0 +1,679 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="stylesheets/tvshow.css" />
+		<title>Netmovies.io</title>
+	</head>
+	<body>
+		<nav>
+			<div class="menu-nav">
+				<div class="navlogo">
+					<h1>NETMOVIES</h1>
+					<div class="navlg-links">
+						<a href="index.html">Home</a>
+						<a href="Tvshow.html" class="active">Tv Shows</a>
+						<a href="movies.html">Movies</a>
+						<a href="news.html">New & Popular</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="dropdown">
+			<div class="drop-icon">
+				<i class="fa-solid fa-user"></i>
+				<span> <i class="fa-solid fa-caret-down drop pointer"></i></span>
+			</div>
+			<div class="drop-items">
+				<div class="menu-name" onclick="show('User')">
+					<h3>User</h3>
+				</div>
+				<div class="empty" onclick="show('')"></div>
+				<div class="menu-link" onclick="show('Sign out')">
+					<a href="#">Sign out</a>
+				</div>
+			</div>
+		</div>
+		<section>
+			<div class="hero-section">
+				<div class="hero-txt">
+					<h1>TV Shows</h1>
+				</div>
+				<div class="hero-images" id="hero-images">
+					<div class="hero-img">
+						<img
+							src="https://i.ytimg.com/vi/QaQvobLYvmY/maxresdefault.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Peaky Blinders</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A gangster family epic set in 1900s England, centering on a
+									gang who sew razor blades in the peaks of their caps, and
+									their fierce boss Tommy Shelby.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://occ-0-358-769.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABS6v2gvwesuRN6c28ZykPq_fpmnQCJwELBU-kAmEcuC9HhWX-DfuDbtA-bfo-IrfgNtxl0qwJJlhI6DENsGFXknKkjhxPGTV-qhp.jpg?r=608"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Stranger Things</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Horror</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+								<div class="drama">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>When a young boy disappears, his mother, a police chief and
+									his friends must confront terrifying supernatural forces in
+									order to get him back.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://flxt.tmsimg.com/assets/p17602726_b_v13_ab.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Manifest</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="mystery">
+									<button type="submit" class="img-btn">mystery</button>
+								</div>
+								<div class="sci-fi">
+									<button type="submit" class="img-btn">Sci-Fi</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A commercial airliner suddenly reappears after being missing
+									for five years. As those aboard reintegrate into society, they
+									experience guiding voices and visions of events yet to occur,
+									and soon a deeper mystery unfolds.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://cloudfront-eu-central-1.images.arcpublishing.com/thenational/LY46X4SJ4BHKTF5Q2Z4UNWDNVU.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Suits</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Comedy</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>On the run from a drug deal gone bad, brilliant college
+									dropout Mike Ross finds himself working with Harvey Specter,
+									one of New York City's best lawyers.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BNDJjMzc4NGYtZmFmNS00YWY3LThjMzQtYzJlNGFkZGRiOWI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Lucifer</h1>
+							<div class="info">
+								<div class="crime"
+									><button type="submit" class="img-btn">Crime</button></div
+								>
+								<div class="drama">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+								<div class="fantasy">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Lucifer Morningstar has decided he's had enough of being the
+									dutiful servant in Hell and decides to spend some time on
+									Earth to better understand humanity. He settles in Los Angeles
+									- the City of Angels.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://redgol.cl/__export/1656270801151/sites/redgol/img/2022/06/26/resident_evil-bell_crop1656270629328.jpg_242310155.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Resident Evil</h1>
+							<div class="info">
+								<div class="action"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="horror">
+									<button type="submit" class="img-btn">Horror</button>
+								</div>
+								<div class="sci-fi">
+									<button type="submit" class="img-btn">Sci-Fi</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Nearly three decades after the discovery of the T-virus, an
+									outbreak reveals the Umbrella Corporation's dark secrets.
+									Based on the horror franchise.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://flxt.tmsimg.com/assets/p9972804_b_h9_av.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>BlackList</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="mystery">
+									<button type="submit" class="img-btn">Mystery</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A new FBI profiler, Elizabeth Keen, has her entire life
+									uprooted when a mysterious criminal, Raymond Reddington, who
+									has eluded capture for decades, turns himself in and insists
+									on speaking only to her.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://www.jakes-take.com/wp-content/uploads/2015/07/what-to-expect-in-teen-wolf-season-5-jpeg-197131.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Teen Wolf</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="action">
+									<button type="submit" class="img-btn">Action</button>
+								</div>
+								<div class="fantasy">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>An average high school student and his best friend get caught
+									up in some trouble causing him to receive a werewolf bite. As
+									a result they find themselves in the middle of all sorts of
+									dramas in Beacon Hills.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://i0.wp.com/ravemotionpictures.com/wp-content/uploads/2022/03/Top-Boy-Season-5-Renewal-Date.jpeg?fit=665%2C375&ssl=1"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Top Boy</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="thriller">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Two London drug dealers ply their lucrative trade at a public
+									housing estate in East London.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://technext.ng/wp-content/uploads/2022/05/Blood-Sisters.jpeg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Blood Sisters</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Crime</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+								<div class="thriller">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Blood Sisters tells the story of two friends Sarah (Ini
+									Dima-Okojie) and Kemi (Nancy Isime). Sarah is engaged to her
+									dream man, Kola (Deyemi Okanlawon.) However, their seemingly
+									idyllic union has a dark side.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://i0.wp.com/www.eelive.ng/wp-content/uploads/2020/04/too-hot-to-handle-netflix.jpg?fit=1280%2C720&ssl=1"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Too Hot to Handle</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Romance</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>On the shores of paradise, gorgeous singles meet and mingle.
+									But there's a twist. To win a $100,000 grand prize, they'll
+									have to give up sex.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://quotetheanime.com/wp-content/uploads/2021/10/Baki-Database.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Baki</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Anime</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>The protagonist, Baki Hanma, trains with an intense focus to
+									become strong enough to surpass his father, Yujiro Hanma, the
+									strongest fighter in the world.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://i0.wp.com/m.fzmoviesnet.com/wp-content/uploads/2021/04/Merlin-Season-2-Episode-1-The-Curse-of-Cornelius-Sigan-3.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Merlin</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>These are the brand new adventures of Merlin, the legendary
+									sorcerer as a young man, when he was just a servant to young
+									Prince Arthur on the royal court of Camelot, who has soon
+									become his best friend, and turned Arthur into a great king
+									and a legend.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://occ-0-2705-2706.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABSVALOelT1eUfZ4GlkzV6l2JD6YQqUO8Q88MxkH3YiJmiMcwtqj-FUVLLn2oZlg2pmhskOOXEPVmAj75gdCPH12HGOucGJhZXVE8LJ4LB4fiUQWjiQVL5LosaJMkeOIuWMKTDuXzgBUYvCg5O26MB76txMfSAtY.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Toy Boy</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Romance</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A stripper sets out to prove his innocence for a crime he
+									didn't commit and was unjustly incarcerated for seven years
+									earlier.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://flxt.tmsimg.com/assets/p16091714_b_h8_ah.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>The Umbrell Academy</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Comedy</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A family of former child heroes, now grown apart, must
+									reunite to continue to protect the world.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero-img">
+						<img
+							src="https://img.genial.ly/5d6e5f6547ed6f0fc0bf6c66/1ad4e1e3-250c-474e-a5a2-54c545662256.jpeg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Lupin</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Inspired by the adventures of Arsène Lupin, gentleman thief
+									Assane Diop sets out to avenge his father for an injustice
+									inflicted by a wealthy family.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://interviewerpr.com/wp-content/uploads/2021/03/On-my-block-feature-image.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>On My Block</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Comedy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A coming-of-age story about four bright, street-savvy friends
+									navigating their way through high school in the gritty South
+									Central Los Angeles, trying to get their friend out of a gang,
+									and having friendship turn into something more.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://ntvb.tmsimg.com/assets/p18121509_b_h8_aa.jpg?w=1280&h=720"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Outer Banks</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Action</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A group of teenagers from the wrong side of the tracks
+									stumble upon a treasure map that unearths a long-buried
+									secret.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://blogger.googleusercontent.com/img/a/AVvXsEi0eaXERFo4lrZKa8rDNeyvOX_kwnW5xrea3VV4Bbp95_IWFq56JrHbE4M_9wQ82dhKX8u-OkIlh_Jmi7r6HE1W9aZV8s4dP8nCyCYRLSVNAF-NQIZvwli9NdxUJ8VvJ-dooPrESgexhTESzMe3PepGdI71f8EIwnmR-LujpNUVU9AQo_TDULOw9XM=w1200-h630-p-k-no-nu"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Blood and Water</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Mystery</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A local teen uncovers her family's secret past and navigates
+									the complicated world of a South African high school.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://www.denofgeek.com/wp-content/uploads/2018/04/the-flash-season-5-release-date-news-villain-story.jpg?resize=768%2C432"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>The Flash</h1>
+							<div class="info">
+								<div class="action"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="drama">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>After being struck by lightning, Barry Allen wakes up from
+									his coma to discover he's been given the power of super speed,
+									becoming the Flash, and fighting crime in Central City.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ft-section">
+			<footer class="footer-section">
+				<div class="footer-items">
+					<div class="footer-left">
+						<div class="footer-icons">
+							<div class="facebbook">
+								<i class="fa-brands fa-facebook"></i>
+							</div>
+							<div class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</div>
+							<div class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</div>
+						</div>
+						<div class="footer-txt--left">
+							<a href="#">
+								<ul>
+									<li> Audio and Subtitles </li>
+								</ul>
+							</a>
+							<a href="#">
+								<ul>
+									<li> Help center </li>
+								</ul>
+							</a>
+							<a href="#">
+								<ul>
+									<li> Pivacy </li>
+								</ul>
+							</a>
+							<a href="#">
+								<ul>
+									<li> Contact Us </li>
+								</ul>
+							</a>
+						</div>
+						<button type="submit" class="btn"> Sign Out </button>
+					</div>
+
+					<div class="footer-right">
+						<h1>Categories</h1>
+						<div class="footer-txt--right">
+							<a href="">
+								<ul>
+									<li>Tv show</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>Drama</li>
+								</ul>
+							</a>
+							<a href=""
+								><ul>
+									<li>Movies</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>Anime</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>News & Popular</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>My List</li>
+								</ul>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="copyright"> &copy; 2022 wecyclers</div>
+					<div class="patnership">
+						<p>.Legal</p>
+						<p>.Cookie Declaration</p>
+						<p>.Security</p>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="scripts/tvshow.js"></script>
+		<script
+			src="https://kit.fontawesome.com/3724bb3423.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

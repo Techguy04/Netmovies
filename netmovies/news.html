@@ -1,0 +1,677 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="stylesheets/news.css" />
+		<title>Netmovies.io</title>
+	</head>
+	<body>
+		<nav>
+			<div class="menu-nav">
+				<div class="navlogo">
+					<h1>NETMOVIES</h1>
+					<div class="navlg-links">
+						<a href="index.html">Home</a>
+						<a href="Tvshow.html">Tv Shows</a>
+						<a href="movies.html">Movies</a>
+						<a href="news.html" class="active">New & Popular</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="dropdown">
+			<div class="drop-icon">
+				<i class="fa-solid fa-user"></i>
+				<span> <i class="fa-solid fa-caret-down drop pointer"></i></span>
+			</div>
+			<div class="drop-items">
+				<div class="menu-name" onclick="show('User')">
+					<h3>User</h3>
+				</div>
+				<div class="empty" onclick="show('')"></div>
+				<div class="menu-link">
+					<a href="#">Sign out</a>
+				</div>
+			</div>
+		</div>
+		<section>
+			<div class="hero-section">
+				<div class="hero-txt">
+					<h1>Coming Soon</h1>
+				</div>
+				<div class="hero-images" id="newdtls">
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BMTQwNDM2MTMwMl5BMl5BanBnXkFtZTgwMjE4NjQxMTE@._V1_FMjpg_UX1000_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Wanted</h1>
+							<div class="info">
+								<div class="action"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="thriller">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A frustrated office worker discovers that he is the son of a
+									professional assassin, and that he shares his father's
+									superhuman killing abilities.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://eurasianet.org/sites/default/files/styles/article/public/2020-01/%5E%20Underground.jpg?itok=qHsfkOWF"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>6 Underground</h1>
+							<div class="info">
+								<div class="action">
+									<button type="submit" class="img-btn">Action </button>
+								</div>
+								<div class="thriller">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+								<div class="comedy">
+									<button type="submit" class="img-btn">Comedy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Six individuals from all around the globe, each the very best
+									at what they do, have been chosen not only for their skill,
+									but for a unique desire to delete their pasts to change the
+									future. >
+								</p></div
+							>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BMTc3MDcyNzE5N15BMl5BanBnXkFtZTgwNzE2MDE0NzM@._V1_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Hustle</h1>
+							<div class="info">
+								<div class="comedy"
+									><button type="submit" class="img-btn">Comedy</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Two con women - one low rent and the other high class - team
+									up to take down the men who have wronged them..</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://cloudfront-eu-central-1.images.arcpublishing.com/thenational/LY46X4SJ4BHKTF5Q2Z4UNWDNVU.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Suits</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Comedy</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>On the run from a drug deal gone bad, brilliant college
+									dropout Mike Ross finds himself working with Harvey Specter,
+									one of New York City's best lawyers.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://musicart.xboxlive.com/7/33415100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Blue Story</h1>
+							<div class="info">
+								<div class="crime"
+									><button type="submit" class="img-btn">Crime</button></div
+								>
+								<div class="drama">
+									<button type="submit" class="img-btn">Drama</button>
+								</div>
+								<div class="fantasy">
+									<button type="submit" class="img-btn">Action</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A gang war dooms the lifelong bond of south London friends in
+									this acclaimed crime drama that features its writer-director
+									as a rapping Greek chorus.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="http://ryreviews.com/wp-content/uploads/2020/04/Extraction.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Extraction</h1>
+							<div class="info">
+								<div class="action"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="horror">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Tyler Rake, a fearless black market mercenary, embarks on the
+									most deadly extraction of his career when he's enlisted to
+									rescue the kidnapped son of an imprisoned international crime
+									lord.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://flxt.tmsimg.com/assets/p9972804_b_h9_av.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>BlackList</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="mystery">
+									<button type="submit" class="img-btn">Mystery</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A new FBI profiler, Elizabeth Keen, has her entire life
+									uprooted when a mysterious criminal, Raymond Reddington, who
+									has eluded capture for decades, turns himself in and insists
+									on speaking only to her.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BNTFkZjdjN2QtOGE5MS00ZTgzLTgxZjAtYzkyZWQ5MjEzYmZjXkEyXkFqcGdeQXVyMTM0NTUzNDIy._V1_FMjpg_UX1000_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Venom</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="action">
+									<button type="submit" class="img-btn">Comedy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Eddie Brock attempts to reignite his career by interviewing
+									serial killer Cletus Kasady, who becomes the host of the
+									symbiote Carnage and escapes prison after a failed
+									execution.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/chameleon/title-movie/357510_White_House_Down_2013_1400x2100_Eng.jpg?itok=x65eFTLe"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>White House Down</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="thriller">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>While on a tour of the White House with his young daughter, a
+									Capitol policeman springs into action to save his child and
+									protect the president from a heavily armed group of
+									paramilitary invaders.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BNGI5MTY2MmYtZDc3Ny00NWJhLWEyMDMtN2Q3MWZlNDVjYjU2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Blood Shot</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="thriller">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Ray Garrison, a slain soldier, is re-animated with
+									superpowers.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BMWU0MGYwZWQtMzcwYS00NWVhLTlkZTAtYWVjOTYwZTBhZTBiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Bad Boys For Life</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Comedy</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Miami detectives Mike Lowrey and Marcus Burnett must face off
+									against a mother-and-son pair of drug lords who wreak vengeful
+									havoc on their city.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://www.tvguide.com/a/img/catalog/provider/1/2/1-8832059326.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>The Old Guard</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Crime</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A covert team of immortal mercenaries is suddenly exposed and
+									must now fight to keep their identity a secret just as an
+									unexpected new member is discovered..</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://aztechin.com/en/wp-content/uploads/2022/03/adam.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>The Adam's Project</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Sci-Fi</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A covert team of immortal mercenaries is suddenly exposed and
+									must now fight to keep their identity a secret just as an
+									unexpected new member is discovered.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://flxt.tmsimg.com/assets/p9259673_p_v8_ag.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Man Of Steel</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>An alien child is evacuated from his dying world and sent to
+									Earth to live among humans. His peace is threatened when other
+									survivors of his home planet invade Earth.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BMTM1NjUxMDI3OV5BMl5BanBnXkFtZTcwNjg1ODM3OA@@._V1_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Jack Reacher</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Mystery</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Thriller</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>A homicide investigator digs deeper into a case involving a
+									trained military sniper responsible for a mass shooting.A
+									gangster family epic set in 1900s England, centering on a gang
+									who sew razor blades in the peaks of their caps, and their
+									fierce boss Tommy Shelby.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Matrix</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Sci-Fi</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Return to a world of two realities: one, everyday life; the
+									other, what lies behind it. To find out if his reality is a
+									construct, to truly know himself, Mr. Anderson will have to
+									choose to follow the white rabbit once more.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://flxt.tmsimg.com/assets/p10069506_p_v8_aa.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Ride Along</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Comedy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Security guard Ben must prove himself to his girlfriend's
+									brother, top police officer James. He rides along James on a
+									24-hour patrol of Atlanta.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BZDU3NWYwYjEtNmNmNy00NDJlLWI0MWItMjkzZDJmMTViZmJkXkEyXkFqcGdeQXVyMjM0ODM1NTE@._V1_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Dracula</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Drama</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+								<div class="crime">
+									<button type="submit" class="img-btn">Horror</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>In 1897 Transylvania, the blood-drinking Count draws his
+									plans against Victorian London.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/chameleon/title-movie/DP_4407708_TC_1400x2100_DP_4407709_EscapeRoom_EST_2000x3000_US_15.jpg?itok=LXnOa3sm"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>The Escape Room</h1>
+							<div class="info">
+								<div class="drama"
+									><button type="submit" class="img-btn">Fantasy</button></div
+								>
+								<div class="crime">
+									<button type="submit" class="img-btn">Horror</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>Six people unwillingly find themselves locked in another
+									series of escape rooms, slowly uncovering what they have in
+									common to survive. Joining forces with two of the original
+									survivors.</p
+								>
+							</div>
+						</div>
+					</div>
+					<div class="hero-img">
+						<img
+							src="https://m.media-amazon.com/images/M/MV5BNmM2MWQ0NzktNzU0OS00MjYzLTkxNDYtMzliNTA5ZmNkMmZlXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
+							alt=""
+						/>
+						<div class="img-desc">
+							<h1>Outside The Wire</h1>
+							<div class="info">
+								<div class="action"
+									><button type="submit" class="img-btn">Action</button></div
+								>
+								<div class="drama">
+									<button type="submit" class="img-btn">Fantasy</button>
+								</div>
+							</div>
+							<div class="desc">
+								<p
+									>In the near future, a drone pilot sent into a war zone finds
+									himself paired with a top-secret android officer on a mission
+									to stop a nuclear attack.</p
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ft-section">
+			<footer class="footer-section">
+				<div class="footer-items">
+					<div class="footer-left">
+						<div class="footer-icons">
+							<div class="facebbook">
+								<i class="fa-brands fa-facebook"></i>
+							</div>
+							<div class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</div>
+							<div class="youtube">
+								<i class="fa-brands fa-youtube"></i>
+							</div>
+						</div>
+						<div class="footer-txt--left">
+							<a href="#">
+								<ul>
+									<li> Audio and Subtitles </li>
+								</ul>
+							</a>
+							<a href="#">
+								<ul>
+									<li> Help center </li>
+								</ul>
+							</a>
+							<a href="#">
+								<ul>
+									<li> Pivacy </li>
+								</ul>
+							</a>
+							<a href="#">
+								<ul>
+									<li> Contact Us </li>
+								</ul>
+							</a>
+						</div>
+						<button type="submit" class="btn"> Sign out </button>
+					</div>
+
+					<div class="footer-right">
+						<h1>Categories</h1>
+						<div class="footer-txt--right">
+							<a href="">
+								<ul>
+									<li>Tv show</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>Drama</li>
+								</ul>
+							</a>
+							<a href=""
+								><ul>
+									<li>Movies</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>Anime</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>News & Popular</li>
+								</ul>
+							</a>
+							<a href="">
+								<ul>
+									<li>My List</li>
+								</ul>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="copyright"> &copy; 2022 wecyclers</div>
+					<div class="patnership">
+						<p>.Legal</p>
+						<p>.Cookie Declaration</p>
+						<p>.Security</p>
+					</div>
+				</div>
+			</footer>
+		</section>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="scripts/news.js"></script>
+		<script
+			src="https://kit.fontawesome.com/3724bb3423.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

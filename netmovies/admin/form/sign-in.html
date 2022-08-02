@@ -1,0 +1,51 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		<!-- google fonts link -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="form-elmnts">
+			<form action="" class="upload" id="loginfrm">
+				<h1>Sign In</h1>
+				<div>
+					<input
+						type="email"
+						id="eml"
+						placeholder="Email address"
+						name="email"
+						required
+					/>
+				</div>
+				<div>
+					<input
+						type="text"
+						id="txt"
+						placeholder="password"
+						name="password"
+						required
+					/>
+				</div>
+				<div class="upload-link">
+					<button>Sign In</button>
+				</div>
+			</form>
+		</div>
+		<script>
+			if (localStorage.getItem("session") !== null) {
+				window.replace("/netmovies/admin/admin.html");
+			}
+		</script>
+		<script src="scripts/form.js"></script>
+	</body>
+</html>
