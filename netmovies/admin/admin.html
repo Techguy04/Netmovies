@@ -40,9 +40,9 @@
 					</div>
 				</div>
 				<div class="sign-out">
-					<a href="admin.html" onclick="localStorage.removeItem('session')"
-						>Sign out</a
-					>
+					<a href="/netmovies/admin/form/sign-in.html">
+						<p onclick="localStorage.removeItem('session')">Sign out</p>
+					</a>
 				</div>
 			</div>
 
@@ -257,6 +257,11 @@
 				</form>
 			</div>
 		</div>
+		<script>
+			if (localStorage.getItem("session") !== null) {
+				window.replace("/netmovies/admin/form/sign-in.html");
+			}
+		</script>
 		<script src="script/admin.js"></script>
 		<script src="script/edit.js"></script>
 		<script

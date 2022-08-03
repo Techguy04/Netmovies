@@ -15,15 +15,24 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="form-elmnts">
+		<div class="form-elmnts" id="signup-frm">
 			<form action="" class="upload" id="loginfrm">
 				<h1>Sign Up</h1>
+				<div>
+					<input
+						type="text"
+						id="name"
+						placeholder="Full name"
+						name="signup-name"
+						required
+					/>
+				</div>
 				<div>
 					<input
 						type="email"
 						id="eml"
 						placeholder="Email address"
-						name="email"
+						name="signup-email"
 						required
 					/>
 				</div>
@@ -32,14 +41,15 @@
 						type="text"
 						id="txt"
 						placeholder="password"
-						name="password"
+						name="signup-password"
 						required
 					/>
 				</div>
 				<div class="upload-link">
-					<button>Upload </button>
+					<button>Sign Up</button>
 				</div>
 			</form>
 		</div>
+		<script src="/netmovies/signup-form/signup.js"></script>
 	</body>
 </html>
